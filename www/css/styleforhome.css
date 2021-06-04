@@ -1,0 +1,116 @@
+@font-face
+{
+    font-family: Avenir;
+    src: url(../assets/fonts/AvenirLTStd-Black.otf);
+}
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.heading
+{
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.heading img 
+{
+    display: block;
+    margin: auto;
+    max-height: 100px;
+    width: auto;
+}
+h1
+{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    background-image: url("../assets/homepage.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+.title
+{
+    text-align: center;
+    color: gold;
+    font-size: 290%;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+.subtitle
+{
+    text-align: center;
+    margin: auto;
+    color: black;
+    background-color: gold;
+    width: 20em;
+    height: auto;
+    padding-top: 0px;
+    font-size: 130%;
+}
+.buttons
+{
+    width: auto;
+    height: auto;
+    font-size: 130%;
+    text-align: center;
+    margin-top: calc(60vh - 200px);
+    align-items: center;
+
+}
+ul
+{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+li
+{
+    float: left;
+    padding: 5px;
+
+}
+li a
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    background-color: gold;
+}
+.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 575px) {
+    .title {
+        font-size: 190%;
+    }
+    .subtitle {
+        width: 15em;
+    }
+    li a {
+        padding: 15px;
+    }
+    .heading img {
+        width: 100%;
+    }
+}

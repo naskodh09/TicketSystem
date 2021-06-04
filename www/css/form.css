@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../assets/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 2vw;
+    margin-top: 0%;
+}
+
+.mainBox {
+    width: 40vw;
+    min-width: 480px;
+    height: 80vh;
+    border: 0.5vw solid gold;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mainBox > h1 {
+    font-size: 4em;
+    font-weight: normal;
+    color: gold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.mainBox > form {
+    display: flex;
+    margin-top: 10px;
+    height: calc(80vh - 120px);
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-wrap input {
+    width: 75%;
+    margin: 10px 0;
+    border: 5px solid gold;
+    font-size: 2rem;
+}
+
+.input-wrap input::placeholder {
+    text-align: center;
+    font-size: 26px;
+    color: grey;
+}
+
+.input-wrap input[type="submit"] {
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: gold;
+    border: 1px solid gold;
+    border-radius: 15px;
+}
+.bottom-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-buttons a {
+    color: black;
+    background-color: gold;
+    padding: 15px 20px;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 550px) {
+.mainBox {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10%;
+}
+.mainBox > form {
+    margin-top: 60px;
+    height: calc(80% - 156px);
+}
+.bottom-buttons {
+    justify-content: space-around;
+}
+}
